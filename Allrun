@@ -1,0 +1,4 @@
+# All run script for case
+
+./Allmesh 
+./Allsolve

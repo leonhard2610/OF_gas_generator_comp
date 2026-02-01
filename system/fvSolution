@@ -1,0 +1,125 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+
+    U
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0;
+    }
+
+    UFinal
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0;
+    }
+
+    // "p.*"
+    // {
+    //     solver          PCG;
+    //     preconditioner  DIC;
+    //     tolerance       1e-8;
+    //     relTol          0.0;
+    // }
+
+
+    "p.*"
+    {
+        solver           GAMG;
+        tolerance        1e-4;
+        relTol           0.01;
+        //relTol           0.0;
+        smoother         GaussSeidel;
+        nPreSweeps       0;
+        nPostSweeps      2;
+        cacheAgglomeration on;
+        agglomerator     faceAreaPair;
+        //nCellsInCoarsestLevel 100;
+        nCellsInCoarsestLevel 10;
+        mergeLevels      1;
+    }
+
+
+    "(e.*)"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0.0;
+    }
+
+    "(k|epsilon).*"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0;
+    }
+
+//back substitution
+    "rho.*"
+    {
+        solver          diagonal;
+    }
+
+}
+
+PIMPLE
+{
+    momentumPredictor           yes;	//yes(D)
+    transonic 		            yes;
+    consistent		            yes;
+
+    nOuterCorrectors            2;
+    nCorrectors                 3;
+    nNonOrthogonalCorrectors    1;
+
+
+//Limits pressure - OF8
+//In OF9 and above is done in fvConstraints
+
+//Increase slowly for stability
+    //pMinFactor      0.2;
+    //pMaxFactor      2.5;		
+
+    //pMin 10000; 
+    //pMax 500000;
+
+//More stable than the other options
+//This is supported for backward-compatibility but'pMin' or 'pMinFactor' are more reliable.
+    //rhoMin 0.1; 
+    //rhoMax 5;
+
+}
+
+relaxationFactors
+{
+    fields
+    {
+        ".*"   0.5;  // ensure diagonal equality
+    }
+    equations
+    {
+        ".*"   0.5;  // ensure diagonal equality
+    }
+}
+// ************************************************************************* //

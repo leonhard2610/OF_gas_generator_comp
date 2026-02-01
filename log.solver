@@ -1,0 +1,847 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamRun -parallel
+Date   : Feb 01 2026
+Time   : 22:14:26
+Host   : "Mads-Ideapad"
+PID    : 240930
+I/O    : uncollated
+Case   : /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2
+nProcs : 8
+Slaves : 
+7
+(
+"Mads-Ideapad.240931"
+"Mads-Ideapad.240932"
+"Mads-Ideapad.240933"
+"Mads-Ideapad.240934"
+"Mads-Ideapad.240935"
+"Mads-Ideapad.240936"
+"Mads-Ideapad.240937"
+)
+
+Pstream initialised with:
+    floatTransfer      : false
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver shockFluid
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+Courant Number mean: 0.00214525 max: 0.086176
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: No corrector convergence criteria found
+        Calculations will do 2 corrections
+
+
+PIMPLE: Operating solver in transient mode with 2 outer correctors
+
+
+
+Starting time loop
+
+Courant Number mean: 0.00214525 max: 0.086176
+deltaT = 1.1999e-08
+Time = 1.1999e-08s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 9.30037e-06, Final residual = 3.33551e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 1, Final residual = 1.4682e-08, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.96254e-08, Final residual = 1.96254e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.67598e-06, Final residual = 1.67819e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0800966, Final residual = 1.40803e-09, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.98423e-08, Final residual = 1.98423e-08, No Iterations 0
+ExecutionTime = 0.39559 s  ClockTime = 1 s
+
+Courant Number mean: 0.00257409 max: 0.103403
+deltaT = 1.43971e-08
+Time = 2.63962e-08s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.11884e-05, Final residual = 4.81599e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0568802, Final residual = 1.11067e-09, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.38121e-08, Final residual = 2.38121e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 5.63107e-06, Final residual = 2.42548e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0179096, Final residual = 4.10886e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.41432e-08, Final residual = 2.41432e-08, No Iterations 0
+ExecutionTime = 0.550619 s  ClockTime = 1 s
+
+Courant Number mean: 0.00308854 max: 0.124069
+deltaT = 1.72755e-08
+Time = 4.36717e-08s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.34671e-05, Final residual = 6.95772e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0238856, Final residual = 6.13912e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.95145e-08, Final residual = 2.95145e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 6.78614e-06, Final residual = 3.50792e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00907239, Final residual = 2.69159e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.00164e-08, Final residual = 3.00164e-08, No Iterations 0
+ExecutionTime = 0.710197 s  ClockTime = 0 s
+
+Courant Number mean: 0.00370603 max: 0.148874
+deltaT = 2.07292e-08
+Time = 6.44009e-08s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.62189e-05, Final residual = 1.00567e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0140158, Final residual = 4.69752e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.67703e-08, Final residual = 3.67703e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.18423e-06, Final residual = 5.07608e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00584626, Final residual = 2.2276e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.75229e-08, Final residual = 3.75229e-08, No Iterations 0
+ExecutionTime = 0.866002 s  ClockTime = 0 s
+
+Courant Number mean: 0.00444693 max: 0.178636
+deltaT = 2.4872e-08
+Time = 8.92729e-08s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.95447e-05, Final residual = 1.45419e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0096244, Final residual = 4.17191e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.60693e-08, Final residual = 4.60693e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 9.87814e-06, Final residual = 7.3514e-13, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00426036, Final residual = 2.06982e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.71935e-08, Final residual = 4.71935e-08, No Iterations 0
+ExecutionTime = 0.996748 s  ClockTime = 0 s
+
+Courant Number mean: 0.00533566 max: 0.214336
+deltaT = 2.98419e-08
+Time = 1.19115e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 2.35688e-05, Final residual = 2.10426e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00725671, Final residual = 4.03652e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.80922e-08, Final residual = 5.80922e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.19333e-05, Final residual = 1.06549e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00334885, Final residual = 2.06116e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.97616e-08, Final residual = 5.97616e-08, No Iterations 0
+ExecutionTime = 1.15418 s  ClockTime = 1 s
+
+Courant Number mean: 0.00640184 max: 0.257165
+deltaT = 3.57996e-08
+Time = 1.54914e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 2.84403e-05, Final residual = 3.04609e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0058221, Final residual = 4.12617e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.3754e-08, Final residual = 7.3754e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.44283e-05, Final residual = 1.5461e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00276947, Final residual = 2.14756e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.6205e-08, Final residual = 7.6205e-08, No Iterations 0
+ExecutionTime = 1.30408 s  ClockTime = 1 s
+
+Courant Number mean: 0.00767991 max: 0.308506
+deltaT = 4.29441e-08
+Time = 1.97859e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.43476e-05, Final residual = 4.41488e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00488141, Final residual = 4.38079e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.4312e-08, Final residual = 9.4312e-08, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 1.74617e-05, Final residual = 2.24877e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00237352, Final residual = 2.30828e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.79111e-08, Final residual = 9.79111e-08, No Iterations 0
+ExecutionTime = 1.44181 s  ClockTime = 1 s
+
+Courant Number mean: 0.0092126 max: 0.370074
+deltaT = 5.15241e-08
+Time = 2.49383e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.15272e-05, Final residual = 6.41001e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00422756, Final residual = 4.78051e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.21559e-07, Final residual = 1.21559e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 2.11575e-05, Final residual = 3.28586e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00208604, Final residual = 2.53605e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.2682e-07, Final residual = 1.2682e-07, No Iterations 0
+ExecutionTime = 1.57232 s  ClockTime = 1 s
+
+Courant Number mean: 0.0110532 max: 0.444012
+deltaT = 6.18034e-08
+Time = 3.11186e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 5.02425e-05, Final residual = 9.33842e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00374741, Final residual = 5.31612e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.57882e-07, Final residual = 1.57882e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 2.56455e-05, Final residual = 4.82119e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00186841, Final residual = 2.86762e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.65487e-07, Final residual = 1.65487e-07, No Iterations 0
+ExecutionTime = 1.70873 s  ClockTime = 1 s
+
+Courant Number mean: 0.0132584 max: 0.532594
+deltaT = 7.41181e-08
+Time = 3.85304e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 6.08151e-05, Final residual = 1.36521e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00337697, Final residual = 6.03045e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.06582e-07, Final residual = 2.06582e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.10831e-05, Final residual = 7.15203e-12, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00169617, Final residual = 3.27443e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.17527e-07, Final residual = 2.17527e-07, No Iterations 0
+ExecutionTime = 1.84759 s  ClockTime = 1 s
+
+Courant Number mean: 0.0159002 max: 0.638715
+deltaT = 8.89417e-08
+Time = 4.74246e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.36795e-05, Final residual = 2.01469e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0030955, Final residual = 6.98523e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.72501e-07, Final residual = 2.72501e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.76499e-05, Final residual = 1.0748e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00155149, Final residual = 3.76446e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 2.88226e-07, Final residual = 2.88226e-07, No Iterations 0
+ExecutionTime = 1.97612 s  ClockTime = 1 s
+
+Courant Number mean: 0.0190803 max: 0.766457
+deltaT = 9.27547e-08
+Time = 5.67e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.75236e-05, Final residual = 2.26799e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00248468, Final residual = 6.13834e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.14674e-07, Final residual = 3.14674e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.94054e-05, Final residual = 1.22596e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00123386, Final residual = 3.2613e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.30881e-07, Final residual = 3.30881e-07, No Iterations 0
+ExecutionTime = 2.09388 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198982 max: 0.799313
+deltaT = 9.27547e-08
+Time = 6.59755e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.79898e-05, Final residual = 2.36623e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00199023, Final residual = 5.12777e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.46085e-07, Final residual = 3.46085e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.94201e-05, Final residual = 1.28753e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000968398, Final residual = 2.67496e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.61296e-07, Final residual = 3.61296e-07, No Iterations 0
+ExecutionTime = 2.225 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198982 max: 0.799311
+deltaT = 9.27547e-08
+Time = 7.5251e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.82202e-05, Final residual = 2.47495e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00164423, Final residual = 4.42277e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.77132e-07, Final residual = 3.77132e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.93824e-05, Final residual = 1.35767e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000781835, Final residual = 2.29262e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 3.91401e-07, Final residual = 3.91401e-07, No Iterations 0
+ExecutionTime = 2.34371 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198982 max: 0.799308
+deltaT = 9.27547e-08
+Time = 8.45264e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.82752e-05, Final residual = 2.59806e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00138556, Final residual = 3.89603e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.12946e-07, Final residual = 4.12946e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.92604e-05, Final residual = 1.4312e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000644462, Final residual = 2.03585e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.41955e-07, Final residual = 4.41955e-07, No Iterations 0
+ExecutionTime = 2.47426 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198983 max: 0.799302
+deltaT = 9.27547e-08
+Time = 9.38019e-07s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.82273e-05, Final residual = 2.7355e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00118488, Final residual = 3.55897e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.6504e-07, Final residual = 4.6504e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.90492e-05, Final residual = 1.50631e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000539199, Final residual = 1.83943e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 4.90705e-07, Final residual = 4.90705e-07, No Iterations 0
+ExecutionTime = 2.58766 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198983 max: 0.799295
+deltaT = 9.27547e-08
+Time = 1.03077e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.80252e-05, Final residual = 2.87852e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00102547, Final residual = 3.30461e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.12219e-07, Final residual = 5.12219e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.87969e-05, Final residual = 1.58269e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000457394, Final residual = 1.68383e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.33845e-07, Final residual = 5.33845e-07, No Iterations 0
+ExecutionTime = 2.70818 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198983 max: 0.799286
+deltaT = 9.27547e-08
+Time = 1.12353e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.76672e-05, Final residual = 3.02593e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000895962, Final residual = 3.09795e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.53591e-07, Final residual = 5.53591e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.86053e-05, Final residual = 1.66119e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000405574, Final residual = 1.5759e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.71422e-07, Final residual = 5.71422e-07, No Iterations 0
+ExecutionTime = 2.82908 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198983 max: 0.799279
+deltaT = 9.27547e-08
+Time = 1.21628e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.72242e-05, Final residual = 3.17689e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000790971, Final residual = 2.92665e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.897e-07, Final residual = 5.897e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 3.94268e-05, Final residual = 1.75138e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000458292, Final residual = 1.60646e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.02871e-07, Final residual = 6.02871e-07, No Iterations 0
+ExecutionTime = 2.95005 s  ClockTime = 2 s
+
+Courant Number mean: 0.0198983 max: 0.799272
+deltaT = 9.27547e-08
+Time = 1.30904e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.70615e-05, Final residual = 3.33477e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000742138, Final residual = 2.83337e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.19423e-07, Final residual = 6.19423e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.01552e-05, Final residual = 1.84805e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000502915, Final residual = 1.63068e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.2796e-07, Final residual = 6.2796e-07, No Iterations 0
+ExecutionTime = 3.08677 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198984 max: 0.799267
+deltaT = 9.27547e-08
+Time = 1.40179e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.8504e-05, Final residual = 3.51224e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000841359, Final residual = 2.91606e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.43032e-07, Final residual = 6.43032e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.07358e-05, Final residual = 1.9558e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000535342, Final residual = 1.63528e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.4718e-07, Final residual = 6.4718e-07, No Iterations 0
+ExecutionTime = 3.2296 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198984 max: 0.799262
+deltaT = 9.27547e-08
+Time = 1.49455e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 7.97303e-05, Final residual = 3.70358e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000925445, Final residual = 2.99043e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.61078e-07, Final residual = 6.61078e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.1112e-05, Final residual = 2.0604e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000555069, Final residual = 1.62312e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.6138e-07, Final residual = 6.6138e-07, No Iterations 0
+ExecutionTime = 3.3403 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198984 max: 0.799258
+deltaT = 9.27547e-08
+Time = 1.5873e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.06956e-05, Final residual = 3.9121e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000988161, Final residual = 3.01965e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.7452e-07, Final residual = 6.7452e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.13015e-05, Final residual = 2.16042e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00056194, Final residual = 1.60715e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.7175e-07, Final residual = 6.7175e-07, No Iterations 0
+ExecutionTime = 3.46787 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198984 max: 0.799255
+deltaT = 9.27547e-08
+Time = 1.68006e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.13145e-05, Final residual = 4.11468e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00102807, Final residual = 3.04174e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.84648e-07, Final residual = 6.84648e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.14218e-05, Final residual = 2.25539e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000559667, Final residual = 1.57824e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 6.83487e-07, Final residual = 6.83487e-07, No Iterations 0
+ExecutionTime = 3.59509 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198984 max: 0.799254
+deltaT = 9.27547e-08
+Time = 1.77281e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.15965e-05, Final residual = 4.3089e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00104341, Final residual = 3.02958e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.00367e-07, Final residual = 7.00367e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.1403e-05, Final residual = 2.34436e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000548074, Final residual = 1.60905e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.1077e-07, Final residual = 7.1077e-07, No Iterations 0
+ExecutionTime = 3.71929 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198985 max: 0.799254
+deltaT = 9.27547e-08
+Time = 1.86557e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.18065e-05, Final residual = 4.49374e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00104135, Final residual = 3.05609e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.3747e-07, Final residual = 7.3747e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.12422e-05, Final residual = 2.42652e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000524192, Final residual = 1.62586e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.60638e-07, Final residual = 7.60638e-07, No Iterations 0
+ExecutionTime = 3.83596 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198985 max: 0.799253
+deltaT = 9.27547e-08
+Time = 1.95832e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.181e-05, Final residual = 4.66748e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00101971, Final residual = 3.12111e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 7.87766e-07, Final residual = 7.87766e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.09434e-05, Final residual = 2.50214e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000490614, Final residual = 1.6247e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 8.07529e-07, Final residual = 8.07529e-07, No Iterations 0
+ExecutionTime = 3.95652 s  ClockTime = 3 s
+
+Courant Number mean: 0.0198986 max: 0.799252
+deltaT = 9.27547e-08
+Time = 2.05108e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.15532e-05, Final residual = 4.82909e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000975504, Final residual = 3.14857e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 8.32234e-07, Final residual = 8.32234e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.06113e-05, Final residual = 2.5711e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000458714, Final residual = 1.60622e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 8.47686e-07, Final residual = 8.47686e-07, No Iterations 0
+ExecutionTime = 4.0761 s  ClockTime = 4 s
+
+Courant Number mean: 0.0198986 max: 0.79925
+deltaT = 9.28426e-08
+Time = 2.14392e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.11602e-05, Final residual = 4.9877e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000916132, Final residual = 3.14345e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 8.70538e-07, Final residual = 8.70538e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.06888e-05, Final residual = 2.64149e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000440865, Final residual = 1.6066e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 8.8113e-07, Final residual = 8.8113e-07, No Iterations 0
+ExecutionTime = 4.19597 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199175 max: 0.800006
+deltaT = 9.28426e-08
+Time = 2.23676e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.06998e-05, Final residual = 5.12462e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000860332, Final residual = 3.09833e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.00414e-07, Final residual = 9.00414e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.13961e-05, Final residual = 2.70823e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000473488, Final residual = 1.67787e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.05796e-07, Final residual = 9.05796e-07, No Iterations 0
+ExecutionTime = 4.31569 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199176 max: 0.800005
+deltaT = 9.28426e-08
+Time = 2.3296e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.10463e-05, Final residual = 5.2562e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000841867, Final residual = 3.11011e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.22361e-07, Final residual = 9.22361e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.23357e-05, Final residual = 2.77124e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000512307, Final residual = 1.79263e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.22455e-07, Final residual = 9.22455e-07, No Iterations 0
+ExecutionTime = 4.43142 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199176 max: 0.800004
+deltaT = 9.28426e-08
+Time = 2.42245e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.24745e-05, Final residual = 5.38789e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000900937, Final residual = 3.23874e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.36932e-07, Final residual = 9.36932e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.32242e-05, Final residual = 2.82861e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00054078, Final residual = 1.91539e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.32159e-07, Final residual = 9.32159e-07, No Iterations 0
+ExecutionTime = 4.54972 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199176 max: 0.800004
+deltaT = 9.28426e-08
+Time = 2.51529e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.40966e-05, Final residual = 5.50861e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000957054, Final residual = 3.44802e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.45106e-07, Final residual = 9.45106e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.38878e-05, Final residual = 2.87823e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00055918, Final residual = 2.04082e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.36471e-07, Final residual = 9.36471e-07, No Iterations 0
+ExecutionTime = 4.67093 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199177 max: 0.800002
+deltaT = 9.28426e-08
+Time = 2.60813e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.56582e-05, Final residual = 5.61872e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000995767, Final residual = 3.64663e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.48406e-07, Final residual = 9.48406e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.43593e-05, Final residual = 2.91992e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000563676, Final residual = 2.15249e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.37045e-07, Final residual = 9.37045e-07, No Iterations 0
+ExecutionTime = 4.78678 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199177 max: 0.800001
+deltaT = 9.28426e-08
+Time = 2.70097e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.68224e-05, Final residual = 5.71351e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0010164, Final residual = 3.85886e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.49304e-07, Final residual = 9.49304e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.45878e-05, Final residual = 2.95377e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000552108, Final residual = 2.2324e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.41711e-07, Final residual = 9.41711e-07, No Iterations 0
+ExecutionTime = 4.90939 s  ClockTime = 4 s
+
+Courant Number mean: 0.0199177 max: 0.8
+deltaT = 9.28426e-08
+Time = 2.79382e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.76328e-05, Final residual = 5.79277e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00101735, Final residual = 4.04849e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.57645e-07, Final residual = 9.57645e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.45746e-05, Final residual = 2.97995e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00052733, Final residual = 2.28545e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.54691e-07, Final residual = 9.54691e-07, No Iterations 0
+ExecutionTime = 5.02146 s  ClockTime = 5 s
+
+Courant Number mean: 0.0199178 max: 0.799999
+deltaT = 9.28426e-08
+Time = 2.88666e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.80243e-05, Final residual = 5.85667e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000993785, Final residual = 4.19437e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.76527e-07, Final residual = 9.76527e-07, No Iterations 0
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.43397e-05, Final residual = 3.01353e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000492781, Final residual = 2.31339e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 9.84951e-07, Final residual = 9.84951e-07, No Iterations 0
+ExecutionTime = 5.16161 s  ClockTime = 5 s
+
+Courant Number mean: 0.0199178 max: 0.799998
+deltaT = 9.28426e-08
+Time = 2.9795e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.79805e-05, Final residual = 5.91091e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00095016, Final residual = 4.29538e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.00966e-06, Final residual = 7.77099e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.40287e-05, Final residual = 2.9783e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000449217, Final residual = 2.31512e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.20109e-07, Final residual = 5.20109e-07, No Iterations 0
+ExecutionTime = 5.38507 s  ClockTime = 5 s
+
+Courant Number mean: 0.0199179 max: 0.799995
+deltaT = 9.28426e-08
+Time = 3.07234e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.76157e-05, Final residual = 5.91493e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000888853, Final residual = 4.3519e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.04926e-06, Final residual = 8.06048e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.37417e-05, Final residual = 2.9803e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000404578, Final residual = 2.30168e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.38541e-07, Final residual = 5.38541e-07, No Iterations 0
+ExecutionTime = 5.56961 s  ClockTime = 5 s
+
+Courant Number mean: 0.019918 max: 0.799991
+deltaT = 9.28426e-08
+Time = 3.16519e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.70613e-05, Final residual = 5.90766e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000817212, Final residual = 4.37549e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.08573e-06, Final residual = 8.33991e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.37894e-05, Final residual = 2.98324e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000377288, Final residual = 2.29113e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.53112e-07, Final residual = 5.53112e-07, No Iterations 0
+ExecutionTime = 5.76064 s  ClockTime = 5 s
+
+Courant Number mean: 0.019918 max: 0.799986
+deltaT = 9.28426e-08
+Time = 3.25803e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.67166e-05, Final residual = 5.91261e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000749277, Final residual = 4.3814e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.11566e-06, Final residual = 8.63509e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.41463e-05, Final residual = 2.98384e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000372696, Final residual = 2.31898e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.63298e-07, Final residual = 5.63298e-07, No Iterations 0
+ExecutionTime = 5.90991 s  ClockTime = 5 s
+
+Courant Number mean: 0.0199181 max: 0.799981
+deltaT = 9.28426e-08
+Time = 3.35087e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.6997e-05, Final residual = 5.91752e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000714405, Final residual = 4.3954e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.13735e-06, Final residual = 8.90478e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.49061e-05, Final residual = 2.98208e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000393874, Final residual = 2.40241e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.6909e-07, Final residual = 5.6909e-07, No Iterations 0
+ExecutionTime = 6.04038 s  ClockTime = 6 s
+
+Courant Number mean: 0.0199182 max: 0.799977
+deltaT = 9.28426e-08
+Time = 3.44371e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.77478e-05, Final residual = 5.91618e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000717759, Final residual = 4.50742e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.15065e-06, Final residual = 9.14628e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.57629e-05, Final residual = 2.97731e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000421634, Final residual = 2.49665e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.7082e-07, Final residual = 5.7082e-07, No Iterations 0
+ExecutionTime = 6.15237 s  ClockTime = 6 s
+
+Courant Number mean: 0.0199182 max: 0.799974
+deltaT = 9.28426e-08
+Time = 3.53656e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 8.92042e-05, Final residual = 5.90952e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000761075, Final residual = 4.69791e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.15648e-06, Final residual = 9.40884e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.64854e-05, Final residual = 2.9632e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000446372, Final residual = 2.58933e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.6924e-07, Final residual = 5.6924e-07, No Iterations 0
+ExecutionTime = 6.25846 s  ClockTime = 6 s
+
+Courant Number mean: 0.0199183 max: 0.799969
+deltaT = 9.28426e-08
+Time = 3.6294e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 9.06956e-05, Final residual = 5.89354e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000810465, Final residual = 4.895e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.15579e-06, Final residual = 9.64938e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.7011e-05, Final residual = 2.94535e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000465584, Final residual = 2.67294e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.66594e-07, Final residual = 5.66594e-07, No Iterations 0
+ExecutionTime = 6.38135 s  ClockTime = 6 s
+
+Courant Number mean: 0.0199183 max: 0.799965
+deltaT = 9.28426e-08
+Time = 3.72224e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 9.1899e-05, Final residual = 5.86099e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00085391, Final residual = 5.08481e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.15177e-06, Final residual = 9.86534e-13, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.73051e-05, Final residual = 2.92401e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000477341, Final residual = 2.77901e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.65324e-07, Final residual = 5.65324e-07, No Iterations 0
+ExecutionTime = 6.51342 s  ClockTime = 6 s
+
+Courant Number mean: 0.0199184 max: 0.799961
+deltaT = 9.28426e-08
+Time = 3.81508e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 9.27668e-05, Final residual = 5.8248e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00088609, Final residual = 5.25525e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 1.14941e-06, Final residual = 1.0062e-12, No Iterations 1
+PIMPLE: Iteration 2
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+smoothSolver:  Solving for Ux, Initial residual = 4.7371e-05, Final residual = 2.89655e-11, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.000480508, Final residual = 2.86331e-10, No Iterations 1
+smoothSolver:  Solving for e, Initial residual = 5.70239e-07, Final residual = 5.70239e-07, No Iterations 0
+ExecutionTime = 6.6229 s  ClockTime = 6 s
+
+Courant Number mean: 0.0199184 max: 0.799958
+deltaT = 9.28426e-08
+Time = 3.90793e-06s
+
+PIMPLE: Iteration 1
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0

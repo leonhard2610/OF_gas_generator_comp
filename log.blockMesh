@@ -1,0 +1,125 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : blockMesh
+Date   : Feb 01 2026
+Time   : 22:10:36
+Host   : "Mads-Ideapad"
+PID    : 239681
+I/O    : uncollated
+Case   : /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Expanding #calc at line 31 in file "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/system/blockMeshDict"
+Creating new library in "dynamicCode/_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a/platforms/linux64GccDPInt32Opt/lib/libcodeStream_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a.so"
+"/opt/openfoam13/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a"
+wmake libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_bbc70287bca5ba49e2c9b19bb0e0494d1419c28a.so
+Expanding #calc at line 32 in file "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/system/blockMeshDict"
+Creating new library in "dynamicCode/_86c00b4cd27ac3b1c6078d6362e093c4929d1150/platforms/linux64GccDPInt32Opt/lib/libcodeStream_86c00b4cd27ac3b1c6078d6362e093c4929d1150.so"
+"/opt/openfoam13/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_86c00b4cd27ac3b1c6078d6362e093c4929d1150/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_86c00b4cd27ac3b1c6078d6362e093c4929d1150"
+wmake libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_86c00b4cd27ac3b1c6078d6362e093c4929d1150
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_86c00b4cd27ac3b1c6078d6362e093c4929d1150/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_86c00b4cd27ac3b1c6078d6362e093c4929d1150.so
+Expanding #calc at line 33 in file "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/system/blockMeshDict"
+Creating new library in "dynamicCode/_41f01cb575afcaca43a2f02d47b61636557de9b5/platforms/linux64GccDPInt32Opt/lib/libcodeStream_41f01cb575afcaca43a2f02d47b61636557de9b5.so"
+"/opt/openfoam13/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_41f01cb575afcaca43a2f02d47b61636557de9b5/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_41f01cb575afcaca43a2f02d47b61636557de9b5"
+wmake libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_41f01cb575afcaca43a2f02d47b61636557de9b5
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_41f01cb575afcaca43a2f02d47b61636557de9b5/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_41f01cb575afcaca43a2f02d47b61636557de9b5.so
+Expanding #calc at line 35 in file "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/system/blockMeshDict"
+Creating new library in "dynamicCode/_ac9f16c99718ea6d0e822996a5b9efcd883862e0/platforms/linux64GccDPInt32Opt/lib/libcodeStream_ac9f16c99718ea6d0e822996a5b9efcd883862e0.so"
+"/opt/openfoam13/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_ac9f16c99718ea6d0e822996a5b9efcd883862e0/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_ac9f16c99718ea6d0e822996a5b9efcd883862e0"
+wmake libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_ac9f16c99718ea6d0e822996a5b9efcd883862e0
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_ac9f16c99718ea6d0e822996a5b9efcd883862e0/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_ac9f16c99718ea6d0e822996a5b9efcd883862e0.so
+Expanding #calc at line 36 in file "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/system/blockMeshDict"
+Creating new library in "dynamicCode/_1d534b688cd96450a976ac48e7da307827c3b328/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1d534b688cd96450a976ac48e7da307827c3b328.so"
+"/opt/openfoam13/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_1d534b688cd96450a976ac48e7da307827c3b328/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_1d534b688cd96450a976ac48e7da307827c3b328"
+wmake libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_1d534b688cd96450a976ac48e7da307827c3b328
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_1d534b688cd96450a976ac48e7da307827c3b328/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_1d534b688cd96450a976ac48e7da307827c3b328.so
+Expanding #calc at line 37 in file "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/system/blockMeshDict"
+Creating new library in "dynamicCode/_27329c55a46d9d2c2e3fb52a447052c8023bd4cb/platforms/linux64GccDPInt32Opt/lib/libcodeStream_27329c55a46d9d2c2e3fb52a447052c8023bd4cb.so"
+"/opt/openfoam13/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_27329c55a46d9d2c2e3fb52a447052c8023bd4cb/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_27329c55a46d9d2c2e3fb52a447052c8023bd4cb"
+wmake libso /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_27329c55a46d9d2c2e3fb52a447052c8023bd4cb
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/dynamicCode/_27329c55a46d9d2c2e3fb52a447052c8023bd4cb/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_27329c55a46d9d2c2e3fb52a447052c8023bd4cb.so
+No non-linear block edges defined
+Creating block faces
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Basic statistics
+    Number of internal faces : 0
+    Number of boundary faces : 6
+    Number of defined boundary faces : 6
+    Number of undefined boundary faces : 0
+
+Checking topology
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.01 .. 0.01
+        j : 0.01 .. 0.01
+        k : 0.01 .. 0.01
+
+No patch pairs to merge
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-1 0.2 -0.02) (-0.2 0.7 0.04)
+  nPoints: 28917
+  nCells: 24000
+  nFaces: 76780
+  nInternalFaces: 67220
+----------------
+Patches
+----------------
+  patch 0 (start: 67220 size: 9560) name: default
+
+End
+

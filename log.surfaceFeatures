@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : surfaceFeatures
+Date   : Feb 01 2026
+Time   : 22:10:36
+Host   : "Mads-Ideapad"
+PID    : 239680
+I/O    : uncollated
+Case   : /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "surfaceFeaturesDict"
+
+Surface            : "gas_gen.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 52
+Vertices     : 28
+Bounding Box : (-0.940376 0.2346 0) (-0.260376 0.6346 0.02)
+
+
+Constructing feature set from included angle 2.61799
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 24
+    feature edges  : 40
+    of which
+        region edges   : 36
+        external edges : 0
+        internal edges : 4
+
+
+Final feature set:
+points      : 28
+edges       : 40
+boundingBox : (-0.940376 0.2346 0) (-0.260376 0.6346 0.02)
+point classification :
+    convex feature points          :       16
+    concave feature points         :        0
+    mixed feature points           :        8
+    other (non-feature) points     :        4
+edge classification :
+    external (convex angle) edges  :       36
+    internal (concave angle) edges :        4
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/gas_gen.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2/constant/extendedFeatureEdgeMesh/gas_gen"
+
+Writing featureEdgeMesh to "constant/geometry/gas_gen.eMesh"
+
+ExecutionTime = 0.001826 s  ClockTime = 0 s
+
+End
+

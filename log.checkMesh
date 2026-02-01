@@ -1,0 +1,115 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : checkMesh -writeSets -writeSurfaces -parallel -latestTime
+Date   : Feb 01 2026
+Time   : 22:13:23
+Host   : "Mads-Ideapad"
+PID    : 240870
+I/O    : uncollated
+Case   : /home/mads/OpenFOAM/mads-12/run/copSub/gas_generator_run2
+nProcs : 8
+Slaves : 
+7
+(
+"Mads-Ideapad.240871"
+"Mads-Ideapad.240872"
+"Mads-Ideapad.240873"
+"Mads-Ideapad.240874"
+"Mads-Ideapad.240875"
+"Mads-Ideapad.240876"
+"Mads-Ideapad.240877"
+)
+
+Pstream initialised with:
+    floatTransfer      : false
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 3
+
+Reconstructing and writing surface representation of the faceSets and cellSets of problem faces in vtk format
+
+Reconstructing and writing the problem points in vtk format
+
+Time = 3s
+
+Mesh stats
+    points:           1658606
+    faces:            4546876
+    internal faces:   4253117
+    cells:            1445964
+    faces per cell:   6.0859
+    boundary patches: 10
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     1376605
+    prisms:        21638
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     47721
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   58
+            6   9919
+            7   366
+            8   128
+            9   27505
+           12   8364
+           15   1310
+           18   71
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking basic patch addressing...
+                   Patch    Faces   Points
+                    back    73506    76608
+                   front    73509    76620
+                   inlet     4512     4772
+                  nozzle   106560   108793
+             outlet_left     2536     2831
+            outlet_right     1280     1449
+        outlet_topBottom     3840     4365
+
+Checking geometry...
+    Overall domain bounding box (-0.940376 0.2346 0) (-0.260376 0.6346 0.02)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Max cell openness = 3.17001e-16 OK.
+    Max aspect ratio = 10.5751 OK.
+    Minimum face area = 8.3925e-09. Maximum face area = 8.80823e-06.  Face area magnitudes OK.
+    Min volume = 2.51069e-12. Max volume = 2.10636e-08.  Total volume = 0.00491402.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.8484 average: 5.78086
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 2.96476 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+End
+
+Finalising parallel run

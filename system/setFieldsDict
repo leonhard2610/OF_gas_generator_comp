@@ -1,0 +1,42 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultValues
+{
+    T       600;
+    p       150000;
+    U       (10 0 0);
+}
+
+zones
+{
+    nozzleZone
+    {
+        type            insideSurface;
+        surface         triSurfaceMesh;
+        file            "nozzleRegion.stl";
+        values
+        {
+            T       300;
+            p       101325;
+            U       (1 0 0);
+        }
+    }
+}
+
+
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

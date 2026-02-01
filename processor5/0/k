@@ -1,0 +1,87 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      k;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 1000;
+
+boundaryField
+{
+    back
+    {
+        type            empty;
+    }
+    front
+    {
+        type            empty;
+    }
+    inlet
+    {
+        type            fixedValue;
+        value           nonuniform List<scalar> 0();
+    }
+    nozzle
+    {
+        type            kqRWallFunction;
+        value           nonuniform List<scalar> 0();
+    }
+    outlet_left
+    {
+        type            inletOutlet;
+        inletValue      nonuniform List<scalar> 0();
+        value           nonuniform List<scalar> 0();
+    }
+    outlet_right
+    {
+        type            inletOutlet;
+        inletValue      nonuniform List<scalar> 0();
+        value           nonuniform List<scalar> 0();
+    }
+    outlet_topBottom
+    {
+        type            inletOutlet;
+        inletValue      nonuniform List<scalar> 0();
+        value           nonuniform List<scalar> 0();
+    }
+    procBoundary5to2
+    {
+        type            processor;
+        value           uniform 1000;
+    }
+    procBoundary5to3
+    {
+        type            processor;
+        value           uniform 1000;
+    }
+    procBoundary5to4
+    {
+        type            processor;
+        value           uniform 1000;
+    }
+    procBoundary5to6
+    {
+        type            processor;
+        value           uniform 1000;
+    }
+    procBoundary5to7
+    {
+        type            processor;
+        value           uniform 1000;
+    }
+}
+
+
+// ************************************************************************* //
