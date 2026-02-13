@@ -30,13 +30,12 @@ boundaryField
     }
     inlet
     {
-        type            flowRateInletVelocity;
-        massFlowRate    0.1604; 
-        rhoInlet        0.67446;
+        type            fixedValue;
+        value           uniform (1 0 0);
     }
     nozzle
     {
-        type            noSlip;
+        type            zeroGradient;
     }
     outlet_left
     {

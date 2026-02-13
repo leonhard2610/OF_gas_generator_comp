@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Version:  13
+    \\  /    A nd           | Version:  12
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
 FoamFile
@@ -30,14 +30,12 @@ boundaryField
     }
     inlet
     {
-        type            flowRateInletVelocity;
-        massFlowRate    
-        {
-            type            constant;
-            value           0.1604;
-        }
-        rhoInlet        0.67446;
-        value           uniform (1564.6 -0 -0);
+        type            fixedValue;
+        value           uniform (1 0 0);
+    }
+    nozzle
+    {
+        type            zeroGradient;
     }
     outlet_left
     {
@@ -50,10 +48,6 @@ boundaryField
     outlet_topBottom
     {
         type            zeroGradient;
-    }
-    nozzle
-    {
-        type            noSlip;
     }
 }
 

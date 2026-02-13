@@ -16,7 +16,7 @@ FoamFile
 
 dimensions      [0 0 0 1 0 0 0];
 
-internalField   uniform 300;
+internalField   uniform 600;
 
 boundaryField
 {
@@ -40,20 +40,20 @@ boundaryField
     outlet_left
     {
         type            inletOutlet;
-        inletValue      uniform 300;
-        value           uniform 300;
+        inletValue      uniform 600;
+        value           uniform 600;
     }
     outlet_right
     {
         type            inletOutlet;
-        inletValue      uniform 300;
-        value           uniform 300;
+        inletValue      uniform 600;
+        value           uniform 600;
     }
     outlet_topBottom
     {
         type            inletOutlet;
-        inletValue      uniform 300;
-        value           uniform 300;
+        inletValue      uniform 600;
+        value           uniform 600;
     }
 }
 

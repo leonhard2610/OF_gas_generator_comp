@@ -16,21 +16,24 @@ foamDictionary system/controlDict -entry purgeWrite -set 10
 foamDictionary constant/polyMesh/boundary -entry entry0/inlet/type -set patch
 foamDictionary constant/polyMesh/boundary -entry entry0/outlet_left/type -set patch
 foamDictionary constant/polyMesh/boundary -entry entry0/outlet_right/type -set patch
-foamDictionary constant/polyMesh/boundary -entry entry0/topBottom/type -set patch
+foamDictionary constant/polyMesh/boundary -entry entry0/outlet_topBottom/type -set patch
 foamDictionary constant/polyMesh/boundary -entry entry0/front/type -set empty
 foamDictionary constant/polyMesh/boundary -entry entry0/back/type -set empty
 #
 foamDictionary constant/polyMesh/boundary -entry entry0/inlet/inGroups -remove
 foamDictionary constant/polyMesh/boundary -entry entry0/outlet_left/inGroups -remove
 foamDictionary constant/polyMesh/boundary -entry entry0/outlet_right/inGroups -remove
-foamDictionary constant/polyMesh/boundary -entry entry0/topBottom/inGroups -remove
+foamDictionary constant/polyMesh/boundary -entry entry0/outlet_topBottom/inGroups -remove
 foamDictionary constant/polyMesh/boundary -entry entry0/front/inGroups -remove
 foamDictionary constant/polyMesh/boundary -entry entry0/back/inGroups -remove
 
 extrudeMesh
 rm -rf constant/polyMesh/sets/*
-setFields 
+#setFields 
 ##decomposePar -fields
+
+#transformPoints "scale=(200 200 200)"
+
 decomposePar
 
 # getting the number of avialiable processors
